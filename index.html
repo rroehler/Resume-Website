@@ -167,10 +167,12 @@
         font-size: 2em !important;
       }
       img[alt="Headshot of Ryan Roehler"] {
-        width: 60vw !important;
-        max-width: 250px;
-        min-width: 120px;
+        width: clamp(120px, 40vw, 250px) !important;
+        max-width: 90vw;
+        min-width: 80px;
+        height: auto;
         margin-top: 2.5rem !important;
+        transition: width 0.3s ease;
       }
       main {
         margin-top: 0.5rem;
