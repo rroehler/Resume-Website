@@ -146,6 +146,32 @@
     button:hover {
       background-color: #666;
     }
+    @media (max-width: 900px) {
+      main {
+        flex-direction: column;
+        height: auto;
+      }
+      .left, .center, .right {
+        max-width: 100%;
+        width: 100%;
+        padding: 1rem 0.5rem;
+      }
+      .center div {
+        width: 100% !important;
+      }
+      .center p {
+        max-width: 95vw;
+        font-size: 0.98rem;
+      }
+      .right h2 {
+        font-size: 2em !important;
+      }
+      img[alt="Headshot of Ryan Roehler"] {
+        width: 60vw !important;
+        max-width: 250px;
+        min-width: 120px;
+      }
+    }
   </style>
 </head>
 <body>
